@@ -1,0 +1,24 @@
+footer {
+    padding: 20px 0;          /* Espaciado vertical */
+    border-top: 1px solid #ddd; /* Línea superior */
+  }
+  footer .logo {
+    max-width: 150px;          /* Tamaño máximo de la imagen */
+  }
+  footer p {
+    margin: 5px 0;             /* Espaciado entre párrafos */
+  }
+  footer .contacta {
+    background-color: rgb(117, 181, 20); /* Color de fondo */
+    padding: 15px;           /* Margen interno para evitar que el texto esté pegado */
+    border-radius: 5px;       /* Bordes redondeados */
+    color: white;             /* Color de texto blanco para contraste */
+  }
+  @media (max-width: 576px) {
+    footer .col-md-3, footer .col-md-9 {
+      text-align: center;       /* Centrar texto en pantallas pequeñas */
+    }
+    footer .col-md-9 {
+      margin-top: 10px;         /* Margen superior en pantallas pequeñas */
+    }
+  }

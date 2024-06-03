@@ -1,0 +1,107 @@
+$hover-color: rgb(117, 181, 20);
+$transition-duration: 0.3s;
+$font-size-default: 1rem;
+$text-shadow-effect: 2px 2px 4px rgba(0, 0, 0, 0.3);
+$box-shadow-header: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+.header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: $box-shadow-header;
+}
+
+.logo {
+    margin: 20px;
+    width: 150px; 
+    height: auto;
+
+    @media (max-width: $breakpoint-xl) {
+        width: 140px;
+    }
+    @media (max-width: $breakpoint-lg) {
+        width: 120px;
+    }
+    @media (max-width: $breakpoint-md) {
+        width: 130px;
+    }
+    @media (max-width: $breakpoint-sm) {
+        width: 130px;
+    }
+}
+
+ul, li {
+    gap: 50px;
+
+    @media (max-width: $breakpoint-lg) {
+        gap: 40px;
+    }
+    @media (max-width: $breakpoint-md) {
+        gap: 20px;
+    }
+    @media (max-width: $breakpoint-sm) {
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .nav-link {
+        position: relative;
+        text-decoration: none;
+        transition: color $transition-duration, text-shadow $transition-duration, transform $transition-duration;
+        font-size: 20px;
+
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 2px;
+            background-color: $hover-color;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform $transition-duration ease;
+        }
+
+        &:hover, &:focus {
+            color: $hover-color;
+            text-shadow: $text-shadow-effect;
+
+            &::after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }
+
+        @media (max-width: $breakpoint-md) {
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            font-size: 0.75rem;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-md) {
+    .header {
+        padding: 10px;
+    }
+    .logo {
+        margin: 10px;
+    }
+}

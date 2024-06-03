@@ -1,0 +1,17 @@
+.promotions {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+}
+
+.container-promotions {
+    max-width: 800px; 
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+.promotion-image img {
+    width: 100%; 
+    height: auto; 
+}

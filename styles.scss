@@ -1,0 +1,21 @@
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "sass/header";
+@import "sass/presentation";
+@import "sass/promotions";
+@import "sass/info";
+@import "sass/mision";
+@import "sass/content";
+@import "sass/footer";
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}

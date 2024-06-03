@@ -1,0 +1,43 @@
+.presentation {
+  position: relative;
+  height: 60vh;
+  margin-top: 100px;
+  background: url('img/init.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end; 
+  justify-content: center;
+  padding-bottom: 20px; 
+}
+
+  
+  .presentation-container {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding: 20px;
+    background-color: rgba(140, 241, 58, 0.5);
+    width: 600px; 
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  }
+  
+  @media (max-width: 768px) {
+    .presentation-container {
+      width: 80%; 
+      font-size: 1.3rem; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .presentation-container {
+      width: 90%; 
+      font-size: 1.2rem; 
+      padding: 15px; 
+    }
+  
+    .presentation {
+      height: 50vh; 
+    }
+  }
+  

@@ -1,0 +1,23 @@
+.content{
+    color:#6b6b8b;
+}
+
+.feature-box {
+    padding: 20px;             
+    border-radius: 10px;       
+    margin-bottom: 20px;       
+    text-align: left;  
+    border-left: 5px solid #6b6b8b;       
+  }
+  .feature-box p {
+    font-size: 1rem;           
+    margin: 0 0 10px;         
+  }
+  .feature-box h2 {
+    font-size: 1.5rem;         
+    margin: 10px 0;           
+  }
+  .feature-box p:first-of-type {
+    font-size: 2rem;           
+    margin-bottom: 10px;       
+  }

@@ -1,0 +1,43 @@
+.mision {
+    background-color: rgb(117, 181, 20);
+    padding: 40px 0; 
+}
+
+.container-mission {
+    max-width: 1200px; 
+    margin: 20px; 
+    padding: 0 15px;
+}
+
+.mision span {
+    font-size: 15px; 
+    color: #ffffff; 
+    margin-bottom: 10px;
+    border-radius: 30px;
+    background-color: rgb(119, 214, 209);
+    padding: 10px 20px; 
+    display: inline-block;
+}
+
+.mision .container-mission{
+    color: #ffffff;
+}
+
+.mision h2 {
+    font-size: 24px; 
+    font-weight: normal; 
+    line-height: 1.4; 
+}
+
+.mision p {
+    font-size: 16px; 
+    color: #020202; 
+    line-height: 1.6; 
+    margin-top: 20px; 
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; 
+    }
+}
